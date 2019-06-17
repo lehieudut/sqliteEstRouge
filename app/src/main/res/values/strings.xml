@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SqliteEstRouge</string>
+    <string name="error_query">Error Querry</string>
+</resources>
