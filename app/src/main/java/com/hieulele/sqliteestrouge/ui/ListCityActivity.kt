@@ -48,7 +48,7 @@ class ListCityActivity : BaseActivity<ListCityPresenterImpl>(), ListCityContract
 
     override fun onLoadMore() {
         mPageLoadMore++
-        mPresenter?.getListCityDB(mPageLoadMore)
+        Handler().postDelayed({ mPresenter?.getListCityDB(mPageLoadMore) }, 200)
     }
 
     override fun showListCity(listMovie: ArrayList<City>, page: Int) {
